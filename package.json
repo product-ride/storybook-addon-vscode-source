@@ -1,0 +1,65 @@
+{
+  "name": "storybook-vscode-component",
+  "version": "1.0.0",
+  "description": "A simple Storybook addon to open the component source in VS Code",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel --extensions '.tsx' src -d dist",
+    "postbuild": "tsc --declaration --emitDeclarationOnly",
+    "prebuild-example": "npm run build",
+    "build-example": "npm run build-storybook --prefix example",
+    "preexample": "npm run build",
+    "example": "npm run storybook --prefix example",
+    "format": "prettier --ignore-path .gitignore --write .",
+    "format-check": "prettier --ignore-path .gitignore --check .",
+    "lint": "eslint --ignore-path .gitignore --ext .js,.tsx .",
+    "type-check": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/product-ride/storybook-addon-vscode-source.git"
+  },
+  "keywords": [
+    "storybook",
+    "vs",
+    "code",
+    "storybook-addon"
+  ],
+  "author": "Vilva Athiban P B <vilvaathiban@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/product-ride/storybook-addon-vscode-source/issues"
+  },
+  "homepage": "https://github.com/product-ride/storybook-addon-vscode-source#readme",
+  "dependencies": {
+    "@storybook/addons": "^6.0.22",
+    "@storybook/api": "^6.0.22"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.11.6",
+    "@babel/core": "7.11.6",
+    "@babel/plugin-proposal-class-properties": "7.10.4",
+    "@babel/preset-env": "7.11.5",
+    "@babel/preset-react": "7.10.4",
+    "@babel/preset-typescript": "7.10.4",
+    "@types/node": "14.10.2",
+    "@typescript-eslint/eslint-plugin": "4.1.1",
+    "@typescript-eslint/parser": "4.1.1",
+    "eslint": "7.9.0",
+    "eslint-config-airbnb": "18.2.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-jsx-a11y": "6.3.1",
+    "eslint-plugin-react": "7.20.6",
+    "eslint-plugin-react-hooks": "4.1.2",
+    "husky": "4.3.0",
+    "lint-staged": "10.3.0",
+    "prettier": "2.1.1",
+    "react": "^16.13.1",
+    "semantic-release": "17.1.1",
+    "typescript": "4.0.2"
+  }
+}
