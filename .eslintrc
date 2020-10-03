@@ -27,6 +27,7 @@
     "import/extensions": ["error", "ignorePackages", { "tsx": "never" }],
     "import/prefer-default-export": "off",
     "no-use-before-define": "off",
+    "consistent-return": "off",
     "react/jsx-filename-extension": [
       "error",
       { "extensions": [".js", ".tsx"] }
