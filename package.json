@@ -1,6 +1,6 @@
 {
   "name": "storybook-vscode-component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple Storybook addon to open the component source in VS Code",
   "main": "dist/index.js",
   "scripts": {
