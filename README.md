@@ -12,7 +12,18 @@ A simple storybook addon that opens the source file of the component directly. I
 
 `yarn add -D storybook-vscode-component babel-plugin-macros paths.macro`
 
-Note: We are using `babel-plugin-macros` & `paths.macro` for getting file paths easily.
+Note: We are using `babel-plugin-macros` & `paths.macro` for getting file paths easily. It is optional if you choose to hardcode the path of the file.
+
+If you are using `paths.macro` be sure to enable macro in `.babelrc` as below:
+
+```js
+// .babelrc
+{
+    "plugins": [
+        "macros"
+    ]
+}
+```
 
 ### 2. Add the addon to storybook configuration (`.storybook/addon.js` or `.storybook/main.js`)
 
