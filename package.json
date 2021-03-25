@@ -24,7 +24,8 @@
     "vs",
     "code",
     "storybook-addon",
-    "addon"
+    "addon",
+    "organize"
   ],
   "author": "Vilva Athiban P B <vilvaathiban@gmail.com>",
   "license": "ISC",
