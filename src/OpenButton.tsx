@@ -20,7 +20,7 @@ const OpenButton = () => {
   if (!url) return null;
 
   return (
-    <a href={url} target="_blank" rel="noreferrer">
+    <a href={url} target="_blank" rel="noreferrer" style="display:flex;">
       <img
         style={{
           width: '15px',
